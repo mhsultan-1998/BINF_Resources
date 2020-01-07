@@ -17,7 +17,7 @@ fi
 
 output_example=$(python3 hamming.py ATCGATCGATCGGGCTA AAAAAAAAAAAAAAAAA 2>/dev/null)
 output_example_compare=$(echo $output_example | sed -r 's/\s+//g')
-output_correct="ATCGATCGATCGGGCT\tAAAAAAAAAAAAAAAAAA\t13"
+output_correct="ATCGATCGATCGGGCTA\tAAAAAAAAAAAAAAAAA\t13" 
 output_correct_compare=$(printf $output_correct | sed -r 's/\s+//g')
 if [ $output_example_compare == $output_correct_compare ]; then
     echo -e "${GREEN}PASSED:${NC} Random 17-mer comparison"
