@@ -15,7 +15,7 @@ class TestHamming(unittest.TestCase):
         self.assertEqual(hamming("GCTA", "ATCG"), 4, "Hamming distance of two completely different strings")
 
     def test_complex(self):
-        self.assertEqual(hamming("ATCGATCGGATC", "AGCGATCGGAG"), 2, "A more complex example")
+        self.assertEqual(hamming("ATCGATCGGATC", "AGCGATCGGAGC"), 2, "A more complex example")
     
 if __name__ == '__main__':
     unittest.main()
