@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# test_basic_functions.py
+# test_sliding_window.py
 
 import unittest
 from sliding_window import sliding_window, gc_content
